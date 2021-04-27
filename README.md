@@ -1,57 +1,18 @@
-# Project Name
+---
+page_type: sample
+languages:
+- javascript
+- nodejs
+name: "JavaScript end-to-end - Express.js app to App Service secured with easy auth."
+description: "Deploy the Express.js application then configure the web app to add a Microsoft Identity provider."
+products:
+- azure
+- vs-code
+- azure-app-service
+---
 
-(short, 1-3 sentenced, description of the project)
+# JavaScript Express.js app with easy authentication
 
-## Features
+Add Microsoft authentication to your web app with an app registration and an Azure app service. The Azure app service provides an easy authentication ("easy auth") to your web app, doing most of the work for the typical uses cases for you.
 
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+* [Tutorial](https://docs.microsoft.com/azure/developer/javascript/how-to/with-web-app/add-authentication-to-web-app) 
