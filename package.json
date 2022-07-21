@@ -1,31 +1,55 @@
 {
-  "name": "js-e2e-express-server",
+  "name": "js-e2e-express-mongo",
   "version": "1.0.0",
-  "description": "JavaScript server written with Express.js",
-  "main": "index.js",
+  "description": "JavaScript server written with Express.js and the native MongoDB API",
+  "main": "src/index.js",
+  "type": "module",
   "directories": {
     "doc": "docs",
     "test": "test"
   },
   "scripts": {
-    "start": "node index.js"
+    "test": "jest --detectOpenHandles",
+    "start:dev": "npm run lint && npm run start",
+    "start": "node src/index.js --unhandled-rejections=warn",
+    "lint": "eslint src/**/*.js --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diberry/js-e2e-express-server.git"
+    "url": "git+https://github.com/diberry/js-e2e-express-mongo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/diberry/js-e2e-express-server/issues"
+    "url": "https://github.com/diberry/js-e2e-express-mongo/issues"
   },
-  "homepage": "https://github.com/diberry/js-e2e-express-server#readme",
+  "homepage": "https://github.com/diberry/js-e2e-express-mongo#readme",
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2"
+  },
   "dependencies": {
-    "@azure/msal-node": "^1.0.3",
+    "@microsoft/microsoft-graph-client": "^3.0.2",
+    "applicationinsights": "^2.3.3",
+    "axios": "^0.27.2",
     "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "jwt-decode": "^3.1.2",
+    "mongodb": "^3.6.2",
+    "node-fetch": "^3.2.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "serve-static": "^1.14.1"
   },
   "prettier": {
     "printWidth": 80,
